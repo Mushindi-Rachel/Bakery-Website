@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+           
+            <nav class="nav-links">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                
+                <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our services</a>
+            <a href="contact.html">Contacts</a>
+            <a href="order.html"><button>Order now</button></a>
+        </div>
+        </nav>
+        <script>
+            const hamburgerMenu = document.querySelector(".hamburger-menu");
+            const menu = document.querySelector(".nav-menu");
+        
+            hamburgerMenu.addEventListener("click", () => {
+                menu.classList.toggle("active");
+            });
+        </script>
+    </div>
+    <div class="logo">
+    <img src="Images\bakeryLogo.PNG">
+    <h1>BeeBakers</h1>
+    </div>
+    </header>
+    <div class="form">
+    
+        <form action="" id="registration_Form">
+            <h2>Registration Form</h2>
+            <input type="text" placeholder="Name"><br><br>
+            <input type="email" placeholder="Email"><br><br>
+            <input type="text" placeholder="Age"><br><br>
+            <label>Gender</label><br>
+            <input type="radio" value="Male">Male
+            <input type="radio" value="Male">Female<br><br>
+            <label>Country:</label><br>
+            <select placeholder="Select desired course">
+                <option>Select Country</option><br>
+                <option>Burundi</option><br>
+                <option>Ethopia</option><br>
+                <option>Kenya</option><br>            
+                <option>Namibia</option><br>
+                <option>Nigeria</option><br>
+                <option>Rwanda</option><br>
+                <option>Tanzania</option><br>
+                <option>Uganda</option><br>
+                <option>Zambia</option><br>
+                <option>Zimbabwe</option><br>
+            </select><br><br>
+                
+    
+        <label>Select your area of Interest:</label><br>
+            <input type="checkbox">Bread Baking<br>
+            <input type="checkbox">Pastry an Desserts<br>
+            <input type="checkbox">Cake Decorating<br>
+            <input type="checkbox">Cupcake Creation<br>
+            <input type="checkbox">Cookie Artistry<br>
+            <input type="checkbox">Chocolate Confections<br>
+            <input type="checkbox">Vegan Baking<br>
+            <input type="checkbox">Baking Science and Techniques<br>
+            <input type="checkbox">Global Baking Traditions<br>
+
+            
+    
+    
+        <br>
+        <label>Leave a comment:</label><br>
+            <textarea placeholder="comments">
+    
+            </textarea>
+        <button id="btnRegister">Register</button>
+            
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>We are pleased to make memories of sweetness with you.
+        </p>
+    
+    </footer>
+    
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+           
+            <nav class="nav-links">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                
+                <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our services</a>
+            <a href="contact.html">Contacts</a>
+            <a href="order.html"><button>Order now</button></a>
+        </div>
+        </nav>
+
+        <script>
+            const hamburgerMenu = document.querySelector(".hamburger-menu");
+            const menu = document.querySelector(".nav-menu");
+        
+            hamburgerMenu.addEventListener("click", () => {
+                menu.classList.toggle("active");
+            });
+        </script>
+    
+    </div>
+    <div class="logo">
+    <img src="Images\bakeryLogo.PNG">
+    <h1>BeeBakers</h1>
+    </div>
+    </header>
+
+    <div class="search">
+        <input type="search" placeholder="search for products">
+    </div>
+
+    <center>
+    <section>
+        <div class="product">
+            <p>Cookies</p>
+            <img src="Images\cookies.jpg">
+        <div>
+            <a href="/"><button>Order</button></a>
+        </div>
+        </div>
+
+        <div class="product">
+            <p>Crackers</p>
+            <img src="Images\crackers.jpg">
+        <div>
+            <a href="/"><button>Order</button></a>
+        </div>
+        </div>
+
+        <div class="product">
+            <p>Biscuits</p>
+            <img src="Images\biscuits.jpg">
+        <div>
+            <a href="/"><button>Order</button></a>
+        </div>
+        </div>
+
+
+    </section>
+</center>
+
+    <footer class="footer">
+        <p>We are pleased to make memories of sweetness with you.
+        </p>
+    
+    </footer>
+    
+    
+</body>
+</html>

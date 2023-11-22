@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+           
+            <nav class="nav-links">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                
+                <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our services</a>
+            <a href="contact.html">Contacts</a>
+            <a href="order.html"><button>Order now</button></a>
+        </div>
+        </nav>
+        <script>
+            const hamburgerMenu = document.querySelector(".hamburger-menu");
+            const menu = document.querySelector(".nav-menu");
+        
+            hamburgerMenu.addEventListener("click", () => {
+                menu.classList.toggle("active");
+            });
+        </script>
+    </div>
+    <div class="logo">
+    <img src="Images\bakeryLogo.PNG">
+    <h1>BeeBakers</h1>
+    </div>
+    </header>
+
+    <section>
+        <div>
+        <div class="welcome">
+            <h1>Welcome to Bee bakers. <br>
+             Your home of sweetness.</h1>
+        </div>
+        <div class="welcome">
+            <table>
+                <th>Opening hours</th>
+                <tr>
+                    <td class="days">Mon - Fri:</td>
+                    <td>7am - 8pm</td>
+                </tr>
+                <tr>
+                    <td class="days">Sat:</td>
+                    <td>7am - 6pm</td>
+                </tr>
+                <tr>
+                    <td class="days">Sun:</td>
+                    <td>2pm - 6pm</td>
+                </tr>
+            </table>
+            </div>
+        <div class="welcome_pic">
+            <img src="Images\1696874636405.jpg">
+
+        </div>
+    </div>
+
+    </section>
+
+<section class="sec2">
+    <div class="spotlight">
+        <h2>Weekly Spotlight</h2>
+            <img src="Images\Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.webp">
+              
+          <div id="spotlight">
+        <h4>Fruit/chocolate cake</h4>
+        <p>This week the spotlight is on this amaizing fruit cake cotted with chocolate.
+            The cake was custom made for a birthday party.
+
+        </p>
+    </div>
+    
+</div>
+</section>
+
+
+    <footer class="footer">
+    <p>We are pleased to make memories of sweetness with you.
+    </p>
+
+</footer>
+
+   
+    
+</body>
+</html>

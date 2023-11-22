@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bakery</title>
+    <meta name="cakes" content="">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+           
+            <nav class="nav-links">
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                
+                <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our services</a>
+            <a href="contact.html">Contacts</a>
+            <a href="order.html"><button>Order now</button></a>
+        </div>
+        </nav>
+        <script>
+            const hamburgerMenu = document.querySelector(".hamburger-menu");
+            const menu = document.querySelector(".nav-menu");
+        
+            hamburgerMenu.addEventListener("click", () => {
+                menu.classList.toggle("active");
+            });
+        </script>
+    </div>
+    <div class="logo">
+    <img src="Images\bakeryLogo.PNG">
+    <h1>BeeBakers</h1>
+    </div>
+    </header>
+
+    <div class="search">
+        
+        <input type="search" placeholder="search for products" id="searchInput" oninput="performSearch()">
+         <button type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+         </button>
+         <script src="function.js"></script> 
+
+    </div>
+
+    <center>
+    <section class="orderpage" id="products">
+        <div class="product">
+            <p>Bread</p>
+            <img src="Images\bread.webp">
+        <div>
+            <a href="bread.html"><button>View bread</button></a>
+        </div>
+        </div>
+
+        <div class="product">
+            <p>Cakes</p>
+            <img src="Images\cake.webp">
+        <div>
+            <a href="cakes.html"><button>View cakes</button></a>
+        </div>
+        </div>
+
+        <div class="product">
+            <p>Swiss Rolls</p>
+            <img src="Images\strawberrySwiss.jpg">
+        <div>
+            <a href="swissroll.html"><button>View Swiss Rolls</button></a>
+        </div>
+    </div>
+
+
+        <div class="product">
+            <p>Cupcakes</p>
+            <img src="Images\1696698339328.jpg">
+        <div>
+            <a href="cupcakes.html"><button>View cupcakes</button></a>
+        </div>
+        </div>
+
+        <div class="product">
+            <p>Donuts</p>
+            <img src="Images\donuts.jpg">
+        <div>
+            <a href="donuts.html"><button>View donuts</button></a>
+        </div>
+        </div>
+
+       
+        <div class="product">
+            <p>Other Products</p>
+            <img src="Images\cookies.jpg">
+        <div>
+            <a href="/others.html"><button>View</button></a>
+        </div>
+        </div>
+
+
+    </section>
+</center>
+
+    <footer class="footer">
+        <p>We are pleased to make memories of sweetness with you.
+        </p>
+    
+    </footer>
+    
+    
+</body>
+</html>
